@@ -14,7 +14,16 @@ Total: 100
 */
 int main() 
 {
-	
+	int units;
+	double rate;
+	cout<<"Enter units: ";
+	cin>>units;
+	cout<<"Enter rate: ";
+	cin>>rate;
+
+	double total = get_total(units, rate);
+
+	cout<<"Total :"<<total;
 	
 	return 0;
 }
