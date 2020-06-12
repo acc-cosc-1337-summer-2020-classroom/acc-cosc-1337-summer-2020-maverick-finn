@@ -19,7 +19,7 @@ int main()
 
 	tax_amount = get_sales_tax(meal_amount);
 
-	cout<<"Enter tip amount: ";
+	cout<<"Enter tip amount (in %): ";
 	cin>>tip_rate;
 	cout<<"\n";
 
