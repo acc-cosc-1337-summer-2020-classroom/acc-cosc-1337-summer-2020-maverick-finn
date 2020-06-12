@@ -17,9 +17,10 @@ int multiply_numbers(int num1, int num2)
 
 double get_sales_tax(double meal_amount)
 {
-	double tax_rate = 0.0675
+	double tax_rate = 0.0675;
 
 	return meal_amount * tax_rate;
+
 }
 
 
