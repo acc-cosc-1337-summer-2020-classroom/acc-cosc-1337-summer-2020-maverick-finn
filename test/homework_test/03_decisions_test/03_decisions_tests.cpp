@@ -25,4 +25,6 @@ TEST_CASE("Test calculate_gpa function")
 	REQUIRE(calculate_gpa(12, 45) == 3.75);
 	REQUIRE(calculate_gpa(120, 390) == 3.25);
 	REQUIRE(calculate_gpa(90, 180) == 2.00);
+	// Testing that division by 0 returns 'error code' of -1
+	REQUIRE(calculate_gpa(12, 0) == -1);
 }
