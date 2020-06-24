@@ -54,3 +54,6 @@ double calculate_gpa(int credit_hours, double credit_points)
 	
 }
 
+
+
+//comment added so VSCode picks up on a change being made and a commit and be pushed to GitHub, 6/23/2020

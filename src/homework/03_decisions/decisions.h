@@ -10,3 +10,7 @@ int get_grade_points(std::string letter_grade);
 //an double named credit_points returns double.  
 double calculate_gpa(int credit_hours, double credit_points);
 
+
+
+
+//comment added so VSCode picks up on a change being made and a commit and be pushed to GitHub, 6/23/2020
