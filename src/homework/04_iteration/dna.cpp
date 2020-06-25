@@ -1,4 +1,8 @@
 #include "dna.h"
+#include<string>
+using std::string;
+
+
 /*
 Write code for function get_gc_content that accepts
 a const reference string parameter and returns a double.
@@ -14,7 +18,16 @@ Return quotient.
 Write code for function get_reverse_string that
 accepts a string parameter and returns a string reversed.
 */
+string get_reverse_string(string dna)
+{
+    string reverse;
+    for(int i = 0; i<dna.size(); i++);
+    {
+        reverse += dna[dna.size() - i];
+    }
 
+    return reverse;
+}
 
 
 /*
@@ -27,4 +40,22 @@ b. iterate local string variable and
 c. return string
 
 */
+
+
+string get_dna_complement(string dna)
+{
+    string reverse = get_dna_complement(dna);
+    string complement;
+
+    for(int i = 0; i<reverse.size(); i++);
+    {
+        switch(reverse[i])
+        {
+            case 'A':
+                complement += 'T';
+        }
+
+    }
+
+}
 
