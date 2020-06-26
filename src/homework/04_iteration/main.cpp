@@ -49,24 +49,30 @@ int main()
 				switch(dna_string[i])
 				{
 					case 'A':
+						check = true;
 						break;
 					case 'T':
+						check = true;
 						break;
 					case 'G':
+						check = true;
 						break;
 					case 'C':
+						check = true;
 						break;
 					default:
 						check = false;
+						break;
 				}
 			}
 
 			if(check == false)
 			{
 				cout << "That DNA string contained characters besides A, T, G, and C." << "\n";
+				//dna_string = "";
 			}
 
-		} while (check = false);
+		} while (check == false);
 		
 		cout << "\n";
 
@@ -88,12 +94,6 @@ int main()
 		cin >> repeat;
 		cout<<"\n";
 
-		/*
-		cout << "Enter 1 to get GC content, or enter 2 to get DNA complement: ";
-		cin >> operation;
-		cout << "Enter DNA string comprised of A, T, G, and C characters: ";
-		cin >> dna_string;
-		*/
 
 	} while (repeat == 'y' || repeat == 'Y');
 	
