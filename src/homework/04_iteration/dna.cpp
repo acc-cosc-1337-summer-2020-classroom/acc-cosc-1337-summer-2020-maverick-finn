@@ -21,7 +21,7 @@ accepts a string parameter and returns a string reversed.
 string get_reverse_string(string dna)
 {
     string reverse;
-    for(int i = 0; i<dna.size(); i++);
+    for(int i = 0; i<dna.size(); i++)
     {
         reverse += dna[dna.size() - i];
     }
@@ -47,7 +47,7 @@ string get_dna_complement(string dna)
     string reverse = get_dna_complement(dna);
     string complement;
 
-    for(int i = 0; i<reverse.size(); i++);
+    for(int i = 0; i<reverse.size(); i++)
     {
         switch(reverse[i])
         {
