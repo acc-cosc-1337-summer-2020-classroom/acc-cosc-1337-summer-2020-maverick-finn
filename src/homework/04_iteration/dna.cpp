@@ -11,7 +11,11 @@ Iterate string count Gs and Cs, divide count by string length.
 Return quotient.
 */
 
-
+double get_gc_content(std::string& dna)
+{
+    //temporarily writing return 0.5 just to test main.cpp
+    return 0.5;
+}
 
 
 /*
@@ -53,9 +57,23 @@ string get_dna_complement(string dna)
         {
             case 'A':
                 complement += 'T';
+                break;
+            case 'T':
+                complement += 'A';
+                break;
+            case 'C':
+                complement += 'G';
+                break;
+            case 'G':
+                complement += 'C';
+                break;
+            default:
+                break;
         }
 
     }
+
+    return complement;
 
 }
 
