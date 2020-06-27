@@ -4,7 +4,7 @@
 Write prototype for function get_gc_content that accepts
 a const reference string parameter and returns a double
 */
-double get_gc_content(std::string& dna);
+double get_gc_content(const std::string& dna);
 
 /*
 Write prototype for function get_reverse_string that 

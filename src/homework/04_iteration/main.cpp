@@ -16,7 +16,7 @@ int main()
 {
 	//initialize variables
 	char repeat;
-	char operation;
+	string operation;
 	string dna_string;
 	bool check;
 
@@ -31,12 +31,12 @@ int main()
 			cout << "Enter 1 to get GC content, or enter 2 to get DNA complement: ";
 			cin >> operation;
 
-			if(operation != '1' && operation != '2')
+			if(operation != "1" && operation != "2")
 			{
 				cout << "That was not a 1 or a 2." << "\n";
 			}
 
-		} while (operation != '1' && operation != '2');
+		} while (operation != "1" && operation != "2");
 		
 		//do while to get a proper DNA string
 		do
@@ -69,17 +69,17 @@ int main()
 			if(check == false)
 			{
 				cout << "That DNA string contained characters besides A, T, G, and C." << "\n";
-				//dna_string = "";
 			}
 
 		} while (check == false);
 		
 		cout << "\n";
 
-
-		if(operation == '1')
+		//if statement performs function based on if user entered a 1 or a 2. Because a do-while loop above
+		//  only allows for a 1 or a 2 to pass, all instances of 'else' will be 2.
+		if(operation == "1")
 		{
-			cout << "DNA string GC content: " << get_gc_content(dna_string) << "%";
+			cout << "DNA string GC content: " << get_gc_content(dna_string);
 		}
 		else
 		{
@@ -89,7 +89,7 @@ int main()
 		cout << "\n";
 
 
-
+		//Determines if loop continues
 		cout << "Enter y or Y to continue: ";
 		cin >> repeat;
 		cout<<"\n";

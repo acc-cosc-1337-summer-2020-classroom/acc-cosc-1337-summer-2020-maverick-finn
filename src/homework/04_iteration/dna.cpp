@@ -11,10 +11,20 @@ Iterate string count Gs and Cs, divide count by string length.
 Return quotient.
 */
 
-double get_gc_content(std::string& dna)
+double get_gc_content(const std::string& dna)
 {
-    //temporarily writing return 0.5 just to test main.cpp
-    return 0.5;
+    double counter = 0.0;
+
+    for(int i=0; i<dna.size(); i++)
+    {
+        if(dna[i] == 'G' || dna[i] == 'C')
+        {
+            counter += 1;
+        }
+    }
+
+    double gc_content = counter / dna.size();
+    return counter / dna.size();
 }
 
 
@@ -27,7 +37,7 @@ string get_reverse_string(string dna)
     string reverse;
     for(int i = 0; i<dna.size(); i++)
     {
-        reverse += dna[dna.size() - i];
+        reverse += dna[dna.size() - i - 1];
     }
 
     return reverse;
@@ -48,7 +58,7 @@ c. return string
 
 string get_dna_complement(string dna)
 {
-    string reverse = get_dna_complement(dna);
+    string reverse = get_reverse_string(dna);
     string complement;
 
     for(int i = 0; i<reverse.size(); i++)
