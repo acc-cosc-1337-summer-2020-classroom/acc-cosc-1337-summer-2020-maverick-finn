@@ -3,7 +3,7 @@
 
 bool TicTacToe::game_over()
 {
-    if(check_column_win() || check_row_win() || check_diagonal_win())
+    if(check_row_win() || check_column_win() || check_diagonal_win())
     {
         set_winner();
         return true;
