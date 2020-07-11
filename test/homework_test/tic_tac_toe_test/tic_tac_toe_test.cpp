@@ -61,9 +61,13 @@ TEST_CASE("Test win by first column")
 	TicTacToe tic_tac_toe;
 	tic_tac_toe.start_game("X");
 	tic_tac_toe.mark_board(1); //X
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(3); //O
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(4); //X
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(5); //O
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(7); //X, should win game
 
 	REQUIRE(tic_tac_toe.game_over() == true);
@@ -74,9 +78,13 @@ TEST_CASE("Test win by second column")
 	TicTacToe tic_tac_toe;
 	tic_tac_toe.start_game("X");
 	tic_tac_toe.mark_board(2); //X
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(3); //O
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(5); //X
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(4); //O
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(8); //X, should win game
 
 	REQUIRE(tic_tac_toe.game_over() == true);
@@ -87,9 +95,13 @@ TEST_CASE("Test win by third column")
 	TicTacToe tic_tac_toe;
 	tic_tac_toe.start_game("X");
 	tic_tac_toe.mark_board(3); //X
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(1); //O
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(6); //X
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(5); //O
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(9); //X, should win game
 
 	REQUIRE(tic_tac_toe.game_over() == true);
@@ -100,9 +112,13 @@ TEST_CASE("Test win by first row")
 	TicTacToe tic_tac_toe;
 	tic_tac_toe.start_game("X");
 	tic_tac_toe.mark_board(1); //X
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(7); //O
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(2); //X
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(9); //O
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(3); //X, should win game
 
 	REQUIRE(tic_tac_toe.game_over() == true);
@@ -113,9 +129,13 @@ TEST_CASE("Test win by second row")
 	TicTacToe tic_tac_toe;
 	tic_tac_toe.start_game("X");
 	tic_tac_toe.mark_board(4); //X
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(1); //O
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(5); //X
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(2); //O
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(6); //X, should win game
 
 	REQUIRE(tic_tac_toe.game_over() == true);
@@ -126,9 +146,13 @@ TEST_CASE("Test win by third row")
 	TicTacToe tic_tac_toe;
 	tic_tac_toe.start_game("X");
 	tic_tac_toe.mark_board(7); //X
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(1); //O
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(8); //X
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(2); //O
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(9); //X, should win game
 
 	REQUIRE(tic_tac_toe.game_over() == true);
@@ -139,9 +163,13 @@ TEST_CASE("Test win diagonally from top left")
 	TicTacToe tic_tac_toe;
 	tic_tac_toe.start_game("X");
 	tic_tac_toe.mark_board(1); //X
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(4); //O
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(5); //X
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(6); //O
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(9); //X, should win game
 
 	REQUIRE(tic_tac_toe.game_over() == true);
@@ -152,9 +180,13 @@ TEST_CASE("Test win diagonally from bottomm left")
 	TicTacToe tic_tac_toe;
 	tic_tac_toe.start_game("X");
 	tic_tac_toe.mark_board(7); //X
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(4); //O
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(5); //X
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(6); //O
+	REQUIRE(tic_tac_toe.game_over() == false);
 	tic_tac_toe.mark_board(3); //X, should win game
 
 	REQUIRE(tic_tac_toe.game_over() == true);
